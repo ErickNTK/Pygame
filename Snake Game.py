@@ -49,7 +49,8 @@ while True:
     if my_direction == LEFT:
         snake[0] = (snake[0][0] - 10, snake[0][1])
       
-    screen.fill((0,255,0))
+    screen.fill((0,0,0))
+    screen.blit(apple, apple_pos)
     for pos in snake:
         screen,blit(snake_skin,pos)
     pygame.display.update()
