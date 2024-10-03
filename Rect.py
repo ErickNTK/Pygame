@@ -35,7 +35,8 @@ running = True
 
 while running:
     screen.fill((0,0,0))
-    screen.blit(player,(player_Location.x, player_Location.y))
+    screen.blit(player, (player_Location.x, player_Location.y))
+    
     if moving_right:
         player_Location.x += velocity
     if moving_left:
