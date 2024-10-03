@@ -17,7 +17,7 @@ height = 200
 window_size = (width, height)
 screen = pg.display.set_mode((window_size))
 
-player_image = pg.image.load('Character-1.png').convert_alpha()
+player_image = pg.image.load('Player.png').convert_alpha()
 player = pg.transform.scale
 (player_image, (50, 75))
 
@@ -34,8 +34,8 @@ velocity = 3,5
 running = True
 
 while running:
-    screen.fill(BACKGROUND_COLOR)
-    screen.blit(player, (player_Location.x, player_Location.y))
+    screen.fill((0,0,0))
+    screen.blit(player,(player_Location.x, player_Location.y))
     if moving_right:
         player_Location.x += velocity
     if moving_left:
