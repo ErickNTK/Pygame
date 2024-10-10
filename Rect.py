@@ -1,78 +1,77 @@
 import pygame
-pygame.init()
+pg.init()
 import pygame as pg
 from math import pi
 from dataclasses import dataclass
-import pygame
+#
+#clock = pg.time.Clock()
+#
+#FPS = 60
+#BACKGROUND_COLOR = (70, 86, 94)
+#
+#pg.display.set_caption("PyGame")
+#
+#width = 450
+#height = 200
+#window_size = (width, height)
+#screen = pg.display.set_mode((window_size))
+#
+#player_image = pg.image.load('Player.png').convert_alpha()
+#player = pg.transform.scale
+#(player_image, (50, 75))
+#
+#moving_right = False
+#moving_left = False
+#
+#@dataclass
+#class PlayerLocation:
+#    x:int
+#    y:int
+#player_Location = PlayerLocation(x=155, y=125)
+#velocity = 3,5
+#
+#running = True
+#
+#while running:
+#    screen.fill((0,0,0))
+#    screen.blit(player, (player_Location.x, player_Location.y))
+#    
+#    if moving_right:
+#        player_Location.x += velocity
+#    if moving_left:
+#        player_Location -= velocity
+#
+#    for event in pg.event.get():
+#        if event.type == pg.QUIT:
+#            running = False
+#
+#        if event.type == pg.KEYDOWN:
+#            if event.key == pg.K_RIGHT:
+#                moving_right = True
+#            if event.key == pg.K_LEFT:
+#                moving_left = True
+#        if event.type == pg.KEYUP:
+#                if event.key == pg.K_RIGHT:
+#                    moving_right = False
+#                if event.key == pg.K_LEFT:
+#                    moving_left = False
+#                
+#    if player_Location.x < 0:
+#        player_Location.x = 0
+#    if player_Location.x + player.get_width() > width:
+#        player_Location.x = width - player.get_width()
+#
+    #pg.display.update()
+    #lock.tick(FPS)
+#    
+#pg.quit()
 
-clock = pg.time.Clock()
-
-FPS = 60
-BACKGROUND_COLOR = (70, 86, 94)
-
-pg.display.set_caption("PyGame")
-
-width = 450
-height = 200
-window_size = (width, height)
-screen = pg.display.set_mode((window_size))
-
-player_image = pg.image.load('Player.png').convert_alpha()
-player = pg.transform.scale
-(player_image, (50, 75))
-
-moving_right = False
-moving_left = False
-
-@dataclass
-class PlayerLocation:
-    x:int
-    y:int
-player_Location = PlayerLocation(x=155, y=125)
-velocity = 3,5
-
-running = True
-
-while running:
-    screen.fill((0,0,0))
-    screen.blit(player, (player_Location.x, player_Location.y))
-    
-    if moving_right:
-        player_Location.x += velocity
-    if moving_left:
-        player_Location -= velocity
-
-    for event in pg.event.get():
-        if event.type == pg.QUIT:
-            running = False
-
-        if event.type == pg.KEYDOWN:
-            if event.key == pg.K_RIGHT:
-                moving_right = True
-            if event.key == pg.K_LEFT:
-                moving_left = True
-        if event.type == pg.KEYUP:
-                if event.key == pg.K_RIGHT:
-                    moving_right = False
-                if event.key == pg.K_LEFT:
-                    moving_left = False
-                
-    if player_Location.x < 0:
-        player_Location.x = 0
-    if player_Location.x + player.get_width() > width:
-        player_Location.x = width - player.get_width()
-
-    pg.display.update()
-    clock.tick(FPS)
-    
-pg.quit()
-
-#GREEN = (0, 255, 0)
-#BLUE = (0, 0, 255)
-#RED = (255, 0, 0)
-#BLACK = (0, 0, 0)
-#WHITE = (255, 255, 255)
-#YELLOW = (255, 255, 0)
+GREEN = (0, 255, 0)
+BLUE = (0, 0, 255)
+RED = (255, 0, 0)
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+YELLOW = (255, 255, 0)
 #
 #screen = pygame.display.set_mode((625, 450))
 #screen.fill((255, 255, 255)) # Fundo Branco
