@@ -24,3 +24,5 @@ while True:
      if event.type == pg.QUIT:
         exit()
     screen.fill(WHITE)
+    pg.draw.circle(screen, BLUE, (400, 300), 75)
+    pg.display.flip()
